@@ -118,15 +118,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .catagory-sports {
   background-color: #f99500;
-  color: white; }
+  color: #fff; }
 
 .catagory-ent {
   background-color: #a66bbe;
-  color: black; }
+  color: #fff; }
 
 .catagory-tech {
   background-color: #009cff;
-  color: white; }
+  color: #fff; }
 
 .home {
   color: black;
@@ -137,11 +137,31 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem; }
     .home .articles .box {
-      background-color: #fff;
-      padding: 0.75rem 0.75rem; }
-    .home .articles .horizontal {
-      grid-column: 1/span 2;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1rem;
-      align-items: center; }
+      background-color: #fff;
+      padding: 0.75rem 0.75rem;
+      align-items: center;
+      grid-gap: 1rem; }
+    .home .articles .box-1, .home .articles .box-7 {
+      grid-template-columns: repeat(2, 1fr); }
+    .home .articles .box-1 {
+      grid-column: 1/span 2; }
+    .home .articles .box-2 {
+      background-color: #333;
+      color: white; }
+    .home .articles .box-6 {
+      background-color: #c72727;
+      color: white; }
+    .home .articles .box-7 {
+      grid-column: 2/span 2; }
+
+.footer {
+  background-color: #333;
+  padding: 2rem 5rem; }
+  .footer .footer-content {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center; }

@@ -167,17 +167,49 @@ h1,h2,h3,h4,h5,h6{
         grid-template-columns:repeat(3,1fr);
         grid-gap:1rem;
 
-        .box{
+        & .box{
+            display:grid;
             background-color:#fff;
             padding:0.75rem 0.75rem;
-        }
-        & .horizontal{
-            grid-column:1/span 2;
-            display:grid;
-            grid-template-columns: repeat(2,1fr);
+            align-items: center;
             grid-gap:1rem;
-            align-items:center;
-           
         }
+
+        & .box-1, .box-7{
+            grid-template-columns:repeat(2,1fr);
+        }
+
+        .box-1{
+            grid-column:1/span 2;
+        }
+
+        .box-2{
+            background-color: $dark-color;
+            color:set-text-color($dark-color);
+        }
+
+        .box-6{
+            background-color:$primary-color;
+            color:set-text-color($primary-color);
+        }
+
+        .box-7{
+            grid-column:2/span 2;
+            
+        }
+    }
+}
+
+.footer{
+    background-color: $dark-color;
+    padding:2rem 5rem;
+    
+    & .footer-content{
+        color:set-text-color($dark-color);
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:1rem;
+        align-items:center;
+        justify-content: center;
     }
 }

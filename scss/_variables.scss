@@ -27,5 +27,5 @@ $tech-color:#009cff;
 
 @mixin catagory-color($color){
     background-color: $color;
-    color: set-text-color($color);
+    color: #fff;
 }
